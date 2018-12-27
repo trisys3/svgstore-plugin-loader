@@ -17,10 +17,12 @@ rules: [{
 }]
 ```
 
-If you're using the plugin, you probably only want it in production. Therefore,
+If you're using the plugin, you probably only want it in production. Something like:
 
 ```js
 const {plugin: SvgstorePlugin} = require('svgstore-plugin-loader');
 
-exports.plugins = [new SvgstorePlugin()];
+if(process.env.NODE_ENV) {
+  exports.plugins = [new SvgstorePlugin()];
+}
 ```
