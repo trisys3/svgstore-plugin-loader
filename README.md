@@ -14,7 +14,8 @@ rules: [{
     loader: 'html-loader',
     loader: 'svgstore-loader',
   },
-}]```
+}]
+```
 
 If you're using the plugin, you probably only want it in production. Therefore,
 
