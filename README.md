@@ -4,9 +4,12 @@ A set of tools for running svgstore in webpack
 
 ## Install
 
-```npm i svgstore-plugin-loader```
+```console
+npm i svgstore-plugin-loader
+```
 
 ## Usage
+
 The loader is designed to be used after html-loader. For example,
 
 ```js
