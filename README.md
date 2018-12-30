@@ -1,7 +1,9 @@
 # svgstore-plugin-loader
+
 A set of tools for running svgstore in webpack
 
 ## Install
+
 ```npm i svgstore-plugin-loader```
 
 ## Usage
@@ -26,3 +28,15 @@ if(process.env.NODE_ENV) {
   exports.plugins = [new SvgstorePlugin()];
 }
 ```
+
+## Loader Options
+
+None yet.
+
+## Plugin Options
+
+None yet.
+
+## License
+
+[MIT](./LICENSE)
