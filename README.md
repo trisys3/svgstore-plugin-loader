@@ -10,33 +10,23 @@ npm i svgstore-plugin-loader
 
 ## Usage
 
-The loader is designed to be used after html-loader. For example,
+This loader is designed to be used after html-loader, but can be used independently. If replacing html-loader, be sure you only want SVGs in your project. An example with html-loader:
 
 ```js
-rules: [{
-  test: /\.html$/,
-  use: {
-    loader: 'html-loader',
-    loader: 'svgstore-loader',
+module.exports = {
+  module: {
+    rules: [{
+      test: /\.html$/,
+      use: {
+        loader: 'html-loader',
+        loader: 'svgstore-loader',
+      },
+    }],
   },
-}]
-```
-
-If you're using the plugin, you probably only want it in production. Something like:
-
-```js
-const {plugin: SvgstorePlugin} = require('svgstore-plugin-loader');
-
-if(process.env.NODE_ENV) {
-  exports.plugins = [new SvgstorePlugin()];
-}
+};
 ```
 
 ## Loader Options
-
-None yet.
-
-## Plugin Options
 
 None yet.
 
